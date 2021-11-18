@@ -1,0 +1,15 @@
+declare
+n number;
+rem number:=0;
+s number:=0;
+num number;
+begin
+n:=101;
+num:=n;
+while num>0 loop
+rem:=mod(num,10);
+s:=s+rem;
+num:=trunc(num/10);
+end loop;
+dbms_output.put_line('Sum of digits is ' ||s);
+end
