@@ -1,0 +1,8 @@
+declare
+a number:=3;
+b number:=5;
+c number;
+begin
+c:=a+b;
+dbms_output.put_line('Sum = '||c);
+end
